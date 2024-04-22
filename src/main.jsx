@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import ShopNow from "./Pages/ShopNow.jsx";
 import FreeWeights from "./Pages/FreeWeights.jsx";
+import SignUp from "./Pages/Signup.jsx";
+import Login from "./Pages/Login.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
   {
     path: "/shopnow",
     element: <ShopNow />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
   },
 ]);
 

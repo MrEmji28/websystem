@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logoImage from "../Navbar/logo.png"; // Import your logo image here
 
 function Navbar() {
   return (
@@ -27,10 +28,10 @@ function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link to='/'>Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to='shopnow'>Shop Now</Link>
+              <Link to="/shopnow">Shop Now</Link>
             </li>
             <li>
               <Link>Profile</Link>
@@ -40,15 +41,19 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        {/* Logo container with offline image */}
+        <div className="logo-container">
+          {/* Logo image with width and height set to 100 by 100 */}
+          <img src={logoImage} alt="Your Logo" className="logo" style={{ width: 200, height: 80 }} />
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to='/'>Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to='/shopnow'>Shop Now</Link>
+            <Link to="/shopnow">Shop Now</Link>
           </li>
           <li>
             <Link>Profile</Link>
@@ -59,8 +64,8 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
-        <a className="btn">Register</a>
+        <Link to="/login" className="btn">Login</Link>
+        <Link to="/signup" className="btn">Register</Link>
       </div>
     </div>
   );
