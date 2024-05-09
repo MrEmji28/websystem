@@ -10,24 +10,29 @@ import Kettlebell from "../assets/images/product-img/freeweights-Kettlebell.jpeg
 import Balls from "../assets/images/product-img/freeweights-balls.jpeg";
 import Rack from "../assets/images/product-img/freeweights-benchrack.jpeg";
 import Lalagyan from "../assets/images/product-img/freeweights-lalagyan.jpeg";
-import Threadmill from "../assets/images/product-img/machines-tredmill.jpeg";
+
+import Treadmill from "../assets/images/product-img/machines-tredmill.jpeg";
 import ChestPressMachine from "../assets/images/product-img/machines-chest-press-machine.jpeg";
 import SeatedDipMachine from "../assets/images/product-img/machines-seated-dip-machine.jpeg";
 import LegPressMachine from "../assets/images/product-img/machines-leg-press-machine.jpeg";
 import BenchPress from "../assets/images/product-img/machines-bench-press.jpeg";
 import StationaryBicycle from "../assets/images/product-img/machines-stationary-bicycle.jpeg";
+
 import PushUpBar from "../assets/images/product-img/calisthenics-push-up-bar.jpeg";
 import PullUpBar from "../assets/images/product-img/calisthenics-pull-up-bar.jpeg";
 import GymnasticRings from "../assets/images/product-img/calisthenics-gymnastic-rings.jpeg";
 import Parallettes from "../assets/images/product-img/calisthenics-parallettes.jpeg";
 import AbRoller from "../assets/images/product-img/calisthenics-ab roller.jpeg";
-import KettleBell from "../assets/images/product-img/calisthenics-kettlebell.jpeg";
+
+
 import IndoorRower from "../assets/images/product-img/cardio-indoor-rower.jpeg";
 import StairClimber from "../assets/images/product-img/cardio-stair-climber.jpeg";
 import AirBike from "../assets/images/product-img/cardio-air-bike.jpeg";
+
 import WeightTrainingGloves from "../assets/images/product-img/gears-weight-training-gloves.jpeg";
 import WeightLiftingBelt from "../assets/images/product-img/gears-weight-lifting-belt.jpeg";
 import WristStraps from "../assets/images/product-img/gears-wrist-straps.jpeg";
+import { Link } from "react-router-dom";
 
 function ShopNow() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -49,7 +54,7 @@ function ShopNow() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto py-8">
+      <div className="container mx-auto py-8 ">
         {/* Title and Search bar */}
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-4xl font-bold">Shop Now!</h1>
@@ -128,7 +133,7 @@ function ShopNow() {
                 <h2 className="card-title">Dumbell</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/dumbell'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -140,7 +145,7 @@ function ShopNow() {
                 <h2 className="card-title">Barbell</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/barbell'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -152,7 +157,7 @@ function ShopNow() {
                 <h2 className="card-title">Plates</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/plates'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -164,7 +169,7 @@ function ShopNow() {
                 <h2 className="card-title">Bar</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/bar'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -176,7 +181,7 @@ function ShopNow() {
                 <h2 className="card-title">Band</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/band'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -188,7 +193,7 @@ function ShopNow() {
                 <h2 className="card-title">Kettlebell</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/kettlebell'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -200,7 +205,7 @@ function ShopNow() {
                 <h2 className="card-title">Balls</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/balls'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -212,7 +217,7 @@ function ShopNow() {
                 <h2 className="card-title">Weight Bench</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/weightbench'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -224,19 +229,19 @@ function ShopNow() {
                 <h2 className="card-title">Equipment Holder</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/equipmentholder'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
             <div className="card card-compact bg-base-100 shadow-xl">
               <figure>
-                <img src={Threadmill} alt="Shoes" />
+                <img src={Treadmill} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Treadmill</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/treadmill'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -248,7 +253,7 @@ function ShopNow() {
                 <h2 className="card-title">Chest Press Machine</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/chest-press-machine'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -260,7 +265,7 @@ function ShopNow() {
                 <h2 className="card-title">Seated Dip Machine</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/seated-dip-machine'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -272,7 +277,7 @@ function ShopNow() {
                 <h2 className="card-title">Leg Press Machine</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/leg-press-machine'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -284,7 +289,7 @@ function ShopNow() {
                 <h2 className="card-title">Bench Rack</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/bench-rack'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -296,7 +301,7 @@ function ShopNow() {
                 <h2 className="card-title">Stationary Bicycle</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/stationary-bicycle'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -308,7 +313,7 @@ function ShopNow() {
                 <h2 className="card-title">Push Up Bar</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/push-up-bar'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -320,7 +325,7 @@ function ShopNow() {
                 <h2 className="card-title">Pull Up Bar</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/pull-up-bar'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -332,7 +337,7 @@ function ShopNow() {
                 <h2 className="card-title">Gymnastic Rings</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/gymnastic-rings'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -344,7 +349,7 @@ function ShopNow() {
                 <h2 className="card-title">Parallettes</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/parallettes'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -356,44 +361,7 @@ function ShopNow() {
                 <h2 className="card-title">Ab Roller</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
-                </div>
-              </div>
-            </div>
-            <div className="card card-compact bg-base-100 shadow-xl">
-              <figure>
-                <img src={KettleBell} alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Kettlebell</h2>
-                <p>Indicate Product Short Description</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
-                </div>
-              </div>
-            </div>
-
-            <div className="card card-compact bg-base-100 shadow-xl">
-              <figure>
-                <img src={Threadmill} alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Treadmill</h2>
-                <p>Indicate Product Short Description</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
-                </div>
-              </div>
-            </div>
-            <div className="card card-compact bg-base-100 shadow-xl">
-              <figure>
-                <img src={StationaryBicycle} alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Stationary Bicycle</h2>
-                <p>Indicate Product Short Description</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                <Link to='/ab-roller'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -405,7 +373,7 @@ function ShopNow() {
                 <h2 className="card-title">Indoor Rower</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                  <Link to='/indoor-rower'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -417,7 +385,7 @@ function ShopNow() {
                 <h2 className="card-title">Stair Climber</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                   <Link to='/stair-climber'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -429,7 +397,7 @@ function ShopNow() {
                 <h2 className="card-title">Air Bike</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                   <Link to='/air-bike'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -442,7 +410,7 @@ function ShopNow() {
                 <h2 className="card-title">Weight Training Gloves</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                   <Link to='/weight-training-gloves'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -454,7 +422,7 @@ function ShopNow() {
                 <h2 className="card-title">Weight Lifting Belt</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                   <Link to='/weight-lifting-belt'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>
@@ -466,7 +434,7 @@ function ShopNow() {
                 <h2 className="card-title">Wrist Straps</h2>
                 <p>Indicate Product Short Description</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-neutral">Buy Now</button>
+                   <Link to='/wrist-straps'><button className="btn btn-neutral">Buy Now</button></Link>
                 </div>
               </div>
             </div>

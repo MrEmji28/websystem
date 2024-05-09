@@ -34,10 +34,10 @@ function Navbar() {
               <Link to="/shopnow">Shop Now</Link>
             </li>
             <li>
-              <Link>Profile</Link>
+              <Link to="/profile">Profile</Link>
             </li>
             <li>
-              <Link>About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
           </ul>
         </div>
@@ -56,10 +56,10 @@ function Navbar() {
             <Link to="/shopnow">Shop Now</Link>
           </li>
           <li>
-            <Link>Profile</Link>
+            <Link to="/profile">Profile</Link>
           </li>
           <li>
-            <Link>About Us</Link>
+            <Link to="/about">About Us</Link>
           </li>
         </ul>
       </div>
