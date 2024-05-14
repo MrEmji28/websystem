@@ -8,30 +8,30 @@ function SignUp() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col lg:flex-row items-center justify-center h-screen">
-        {/* Left side with logoBrand */}
-        <div
-          className="flex-none lg:w-1/4 mb-8 lg:mb-0 lg:mr-8"
-          style={{ position: "relative", left: "300px" }}
-        >
+      <div className="flex flex-col items-center justify-start min-h-screen pt-4 pb-4">
+        {/* Logo at the top */}
+        <div className="mb-4">
           <img
             src={logoBrand}
             alt="Brand Logo"
-            className="w-900 h-900 mx-auto lg:mx-0"
+            className="w-80 h-90 mx-auto" // Adjusted width and height
           />
         </div>
 
-        {/* Right side with sign-up form */}
-        <div className="flex flex-col justify-center lg:w-2/3">
+        {/* Sign-up form */}
+        <div className="flex flex-col justify-center w-full lg:w-1/3 mb-4">
           <div className="bg-gray-300 p-6 rounded-lg shadow-md max-w-md mx-auto">
             <h2 className="text-2xl font-bold text-center mb-4 text-black">
               Sign Up
             </h2>
+
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="name"
-              ></label>
+              >
+                Name
+              </label>
               <input
                 id="name"
                 type="text"
@@ -43,10 +43,12 @@ function SignUp() {
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="name"
-              ></label>
+                htmlFor="address"
+              >
+                Address
+              </label>
               <input
-                id="name"
+                id="address"
                 type="text"
                 className="input input-bordered bg-white text-black border-black w-full lg:w-96"
                 placeholder="Address"
@@ -55,10 +57,12 @@ function SignUp() {
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="name"
-              ></label>
+                htmlFor="phone"
+              >
+                Phone Number
+              </label>
               <input
-                id="name"
+                id="phone"
                 type="text"
                 className="input input-bordered bg-white text-black border-black w-full lg:w-96"
                 placeholder="Phone Number"
@@ -67,11 +71,13 @@ function SignUp() {
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="name"
-              ></label>
+                htmlFor="email"
+              >
+                Email
+              </label>
               <input
-                id="name"
-                type="text"
+                id="email"
+                type="email"
                 className="input input-bordered bg-white text-black border-black w-full lg:w-96"
                 placeholder="Email"
               />
@@ -79,11 +85,13 @@ function SignUp() {
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="name"
-              ></label>
+                htmlFor="password"
+              >
+                Password
+              </label>
               <input
-                id="name"
-                type="text"
+                id="password"
+                type="password"
                 className="input input-bordered bg-white text-black border-black w-full lg:w-96"
                 placeholder="Password"
               />
@@ -91,11 +99,13 @@ function SignUp() {
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="name"
-              ></label>
+                htmlFor="confirm-password"
+              >
+                Confirm Password
+              </label>
               <input
-                id="name"
-                type="text"
+                id="confirm-password"
+                type="password"
                 className="input input-bordered bg-white text-black border-black w-full lg:w-96"
                 placeholder="Confirm Password"
               />
@@ -110,9 +120,7 @@ function SignUp() {
               </button>
             </div>
             <div className="mt-4 text-center">
-              <p className="text-sm text-gray-600">Already have an account? </p>
-            </div>
-            <div className="mt-4 text-center">
+              <p className="text-sm text-gray-600">Already have an account?</p>
               <Link to="/login" className="text-yellow-700 hover:underline">
                 Login
               </Link>

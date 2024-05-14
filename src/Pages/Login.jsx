@@ -8,21 +8,18 @@ function Login() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col lg:flex-row items-center justify-center h-screen">
-        {/* Left side with logoBrand */}
-        <div
-          className="flex-none lg:w-1/4 mb-8 lg:mb-0 lg:mr-8"
-          style={{ position: "relative", left: "300px" }}
-        >
+      <div className="flex flex-col items-center justify-start min-h-screen pt-2 pb-4">
+        {/* Logo at the top */}
+        <div className="mb-4">
           <img
             src={logoBrand}
             alt="Brand Logo"
-            className="w-900 h-900 mx-auto lg:mx-0"
+            className="w-80 h-90 mx-auto" // Increased width and height
           />
         </div>
 
-        {/* Right side with sign-up form */}
-        <div className="flex flex-col justify-center lg:w-2/3">
+        {/* Sign-up form */}
+        <div className="flex flex-col justify-center w-full lg:w-1/3 mb-4">
           <div className="bg-gray-300 p-6 rounded-lg shadow-md max-w-md mx-auto">
             <h2 className="text-2xl font-bold text-center mb-4 text-black">
               Log In
@@ -31,10 +28,12 @@ function Login() {
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="name"
-              ></label>
+                htmlFor="email"
+              >
+                Email
+              </label>
               <input
-                id="name"
+                id="email"
                 type="text"
                 className="input input-bordered bg-white text-black border-black w-full lg:w-96"
                 placeholder="Email"
@@ -43,11 +42,13 @@ function Login() {
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="name"
-              ></label>
+                htmlFor="password"
+              >
+                Password
+              </label>
               <input
-                id="name"
-                type="text"
+                id="password"
+                type="password"
                 className="input input-bordered bg-white text-black border-black w-full lg:w-96"
                 placeholder="Password"
               />
@@ -62,14 +63,12 @@ function Login() {
               </button>
             </div>
             <div className="mt-4 text-center">
-            <p className="text-sm text-gray-600">
-              Forgot your password?{" "}
-            </p>
-            </div>
-            <div className="mt-4 text-center">
-                 <Link to="/forgot-password" className="text-yellow-700 hover:underline">
-                   Reset password
-                 </Link>
+              <p className="text-sm text-gray-600">
+                Forgot your password?{" "}
+                <Link to="/forgot-password" className="text-yellow-700 hover:underline">
+                  Reset password
+                </Link>
+              </p>
             </div>
           </div>
         </div>
